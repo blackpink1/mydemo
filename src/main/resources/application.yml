@@ -26,7 +26,6 @@ spring:
       #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
-
 mybatis:
   mapper-locations: classpath:mapping/*.xml
 
@@ -39,3 +38,7 @@ pagehelper:
   supportMethodsArguments: true
   # 设置为true时，使用RowBounds分页会进行count查询 .默认=false
   rowBoundsWithCount: true
+server:
+  port: 8080
+  servlet:
+    context-path: /mydemo
